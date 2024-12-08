@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Luxury Footer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #1b1b1b, #333333);
+            color: #d4af37;
+            font-size: 0.95rem;
+            padding-top: 3rem;
+            padding-bottom: 2rem;
+            margin-top: auto;
+        }
+
+        footer h5 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        footer p, footer ul {
+            color: #c5c5c5;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: #c5c5c5;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #d4af37;
+        }
+
+        .footer-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            width: 0;
+            height: 2px;
+            background-color: #d4af37;
+            transition: width 0.3s ease;
+        }
+
+        .footer-link:hover::after {
+            width: 100%;
+        }
+
+        .social-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            color: #c5c5c5;
+        }
+
+        .social-icon:hover {
+            color: #d4af37;
+            transform: scale(1.2);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 1rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            footer h5 {
+                font-size: 1rem;
+            }
+            .footer-bottom {
+                text-align: center;
+            }
+        }
+
+        /* Scroll-to-Top Button */
+        #scrollTopBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #d4af37;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        #scrollTopBtn i {
+            font-size: 1.5rem;
+        }
+
+        /* Section Hover Effect */
+        .col-md-2:hover {
+            background-color: rgba(255, 215, 0, 0.1);
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Footer -->
+<footer class="animate__animated animate__fadeInUp">
+    <div class="container">
+        <div class="row">
+            <!-- Company Information -->
+            <div class="col-md-4">
+                <h5>CarRentalPro</h5>
+                <p>Experience luxury on the road. Your trusted partner in premium car rentals.</p>
+            </div>
+
+            <!-- Links Section -->
+            <div class="col-md-2">
+                <h5>Company</h5>
+                <ul class="list-unstyled">
+                    <li><a href="aboutus.html" class="footer-link">About Us</a></li>
+                    <li><a href="careers.html" class="footer-link">Careers</a></li>
+                    <li><a href="press.html" class="footer-link">Press</a></li>
+                    <li><a href="blog.html" class="footer-link">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <h5>Support</h5>
+                <ul class="list-unstyled">
+                    <li><a href="helpcenter.html" class="footer-link">Help Center</a></li>
+                    <li><a href="contactus.html" class="footer-link">Contact Us</a></li>
+                    <li><a href="cancellationpolicy.html" class="footer-link">Cancellation Policy</a></li>
+                    <li><a href="fyqs.html" class="footer-link">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-2">
+                <h5>Legal</h5>
+                <ul class="list-unstyled">
+                    <li><a href="termsandcon.html" class="footer-link">Terms of Service</a></li>
+                    <li><a href="privacypolicy.html" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="cookiep.html" class="footer-link">Cookie Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="col-md-2 text-center">
+                <h5>Follow Us</h5>
+                <div class="d-flex justify-content-center">
+                    <a href="https://www.facebook.com/login/" class="social-icon" data-toggle="tooltip" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://x.com/i/flow/login" class="social-icon" data-toggle="tooltip" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=en" class="social-icon" data-toggle="tooltip" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/" class="social-icon" data-toggle="tooltip" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 CarRentalPro. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <p>Powered by Bootstrap & jQuery</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll-to-Top Button -->
+<button id="scrollTopBtn"><i class="fas fa-chevron-up"></i></button>
+
+<script>
+    // Tooltip Initialization
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    // Scroll-to-Top Button Functionality
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('#scrollTopBtn').fadeIn();
+        } else {
+            $('#scrollTopBtn').fadeOut();
+        }
+    });
+
+    $('#scrollTopBtn').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 500);
+    });
+</script>
+
+</body>
+</html>
