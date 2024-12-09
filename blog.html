@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Vehicle Reservation System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif, 'Helvetica Neue', Helvetica;
+            background-color: #f8f9fa;
+        }
+
+        .hero {
+            background-color: #141414;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 0;
+        }
+
+        .blog-card {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .blog-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .blog-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .blog-card .card-body {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #141414;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 1000;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Welcome to Our Blog</h1>
+    <p>Explore the latest updates, news, and articles from the Vehicle Reservation System.</p>
+</div>
+
+<!-- Blog Section -->
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card blog-card">
+                <img src="download.jpg" class="card-img-top" alt="Technology shaping reservations">
+                <div class="card-body">
+                    <h5 class="card-title">How Technology is Shaping Reservations</h5>
+                    <p class="card-text">Discover how cutting-edge technologies are transforming vehicle reservations...</p>
+                    <a href="#" class="btn btn-primary read-more-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card blog-card">
+                <img src="5tips.webp" class="card-img-top" alt="Tips for vehicle rentals">
+                <div class="card-body">
+                    <h5 class="card-title">Top 5 Tips for Vehicle Rentals</h5>
+                    <p class="card-text">Learn the best practices for renting vehicles efficiently and saving money...</p>
+                    <a href="#" class="btn btn-primary read-more-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card blog-card">
+                <img src="future ele.jpg" class="card-img-top" alt="Future of electric vehicles">
+                <div class="card-body">
+                    <h5 class="card-title">The Future of Electric Vehicles</h5>
+                    <p class="card-text">Dive into the future of EVs and how our platform is supporting this transition...</p>
+                    <a href="#" class="btn btn-primary read-more-btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Back to Top Button -->
+<button class="btn btn-dark back-to-top">↑ Back to Top</button>
+
+<!-- Footer -->
+<footer>
+    &copy; 2024 Vehicle Reservation System Blog. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+</footer>
+
+<!-- jQuery Script -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Smooth scroll to top
+        $(".back-to-top").click(function () {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+
+        // Show/hide back-to-top button
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+                $(".back-to-top").fadeIn();
+            } else {
+                $(".back-to-top").fadeOut();
+            }
+        });
+
+        // Read More button alert
+        $(".read-more-btn").click(function (event) {
+            event.preventDefault();
+            alert("Redirecting to the full blog post...");
+        });
+    });
+</script>
+
+</body>
+</html>

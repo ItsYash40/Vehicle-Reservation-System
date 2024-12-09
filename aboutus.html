@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CarRentalPro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .hero-section {
+            position: relative;
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            transition: transform 0.3s;
+        }
+
+        .team-member img:hover {
+            transform: scale(1.1);
+        }
+
+        .testimonial {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+            transition: box-shadow 0.3s;
+        }
+
+        .testimonial:hover {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background: linear-gradient(to right, #343a40, #212529);
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">CarRentalPro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#values">Values</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Welcome to CarRentalPro</h1>
+        <p>Your trusted partner for luxury vehicle rentals.</p>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="container my-5">
+    <h2 class="text-center mb-4">About Us</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="carabouup1.webp" alt="Luxury Cars" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <h3>Our Mission</h3>
+            <p>
+                At <strong>CarRentalPro</strong>, we specialize in providing top-notch vehicle reservation services to meet your travel needs.
+                With a diverse fleet and exceptional customer service, we strive to make your journey smooth and memorable.
+            </p>
+            <ul>
+                <li>Wide range of premium vehicles</li>
+                <li>24/7 customer support</li>
+                <li>Transparent pricing with no hidden costs</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section id="values" class="container my-5">
+    <h2 class="text-center mb-4">Our Core Values</h2>
+    <div class="row text-center">
+        <div class="col-md-4">
+            <i class="fas fa-star fa-3x text-primary"></i>
+            <h4 class="mt-3">Excellence</h4>
+            <p>We prioritize quality in every aspect of our service.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-handshake fa-3x text-success"></i>
+            <h4 class="mt-3">Integrity</h4>
+            <p>We operate with honesty and transparency at all times.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-users fa-3x text-warning"></i>
+            <h4 class="mt-3">Customer Focus</h4>
+            <p>Your satisfaction is our top priority.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="container my-5">
+    <h2 class="text-center mb-4">What Our Customers Say</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="testimonial">
+                <p>"CarRentalPro exceeded my expectations! The booking process was simple, and the car was in perfect condition. Highly recommend!"</p>
+                <p><strong>- Sarah M.</strong></p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="testimonial">
+                <p>"I needed a car last minute for a business trip, and CarRentalPro came through. Exceptional service and great prices!"</p>
+                <p><strong>- John D.</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section id="team" class="container my-5">
+    <h2 class="text-center mb-4">Meet Our Team</h2>
+    <div class="row text-center">
+        <div class="col-md-3">
+            <div class="team-member">
+                <img src="Snapchat-443214084.jpg" alt="Team Member 1">
+                <h5 class="mt-2">Monu Kumar</h5>
+                <p>Reg. No-23410011316</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="team-member">
+                <img src="dwbajyoti.jpg" alt="Team Member 2">
+                <h5 class="mt-2">Debajyoti Bhakta</h5>
+                <p>Reg. No-2341002155</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="team-member">
+                <img src="https://source.unsplash.com/120x120/?person3" alt="Team Member 3">
+                <h5 class="mt-2">Aditya Kumar Satapathy</h5>
+                <p>Reg. No-2341016145</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="team-member">
+                <img src="https://source.unsplash.com/120x120/?person4" alt="Team Member 4">
+                <h5 class="mt-2">Adyasha Panigrahi</h5>
+                <p>Reg. No-2341016145</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-white text-center py-3">
+    <p>&copy; 2024 CarRentalPro. All Rights Reserved.</p>
+</footer>
+
+<script>
+    // Smooth scroll for navbar links
+    $(document).ready(function() {
+        $('a.nav-link').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 60
+            }, 800);
+        });
+    });
+</script>
+</body>
+</html>

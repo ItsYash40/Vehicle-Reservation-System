@@ -1,0 +1,17 @@
+.footer-link {
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .bg-dark {
+    background-color: #141414 !important; /* Netflix-like dark background */
+  }
+  
+  .text-muted {
+    color: #b3b3b3 !important; /* Netflix-like gray text */
+  }
+  

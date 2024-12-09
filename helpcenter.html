@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Center - Vehicle Reservation System</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .help-hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .help-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .help-hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .search-bar {
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-bar input {
+            flex: 1;
+            padding: 10px 15px;
+            border: 1px solid #ddd;
+            border-right: none;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .search-bar button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .category-card {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .category-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .category-card img {
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            margin-top: 30px;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Help Center Hero Section -->
+<div class="help-hero">
+    <h1>How can we help?</h1>
+    <p>Find answers to your questions about Vehicle Reservation System</p>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input type="text" placeholder="Search help articles" aria-label="Search">
+        <button type="button">Search</button>
+    </div>
+</div>
+
+<!-- Help Categories -->
+<div class="container">
+    <div class="row">
+        <!-- Passenger -->
+        <div class="col-md-4 mb-4">
+            <div class="category-card">
+                <img src="passanger.avif" alt="Passenger">
+                <h5>Passenger</h5>
+            </div>
+        </div>
+        <!-- Driver -->
+        <div class="col-md-4 mb-4">
+            <div class="category-card">
+                <img src="driver.avif" alt="Driver">
+                <h5>Driver</h5>
+            </div>
+        </div>
+        <!-- Your Profile -->
+        <div class="col-md-4 mb-4">
+            <div class="category-card">
+                <img src="yourprofile.avif" alt="Your Profile">
+                <h5>Your Profile</h5>
+            </div>
+        </div>
+        <!-- Safety and Trust -->
+        <div class="col-md-4 mb-4">
+            <div class="category-card">
+                <img src="safety.avif" alt="Trust and Safety">
+                <h5>Trust, Safety & Accessibility</h5>
+            </div>
+        </div>
+        <!-- About -->
+        <div class="col-md-4 mb-4">
+            <div class="category-card">
+                <img src="aus.avif" alt="About">
+                <h5>About Our System</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    &copy; 2024 Vehicle Reservation System. All Rights Reserved.
+</footer>
+
+<script>
+    // jQuery interactions can be added if needed.
+</script>
+
+</body>
+</html>
